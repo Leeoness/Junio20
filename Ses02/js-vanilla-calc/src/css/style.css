@@ -1,4 +1,6 @@
-* {
+*, 
+*::after,
+*::before{
   padding: 0;
   margin: 0;
 }
@@ -17,23 +19,45 @@ body{
   flex-direction: column;
   align-items: center;
 }
+h1{
+  margin: 1.5rem;
+  font-size: xx-large;
+}
 main{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  max-width: 15rem;
 }
 /*document.querySelectorAll('main section:nth-child(-n+2) input') esta seleccion es por rango*/
 main section:nth-child(1) input, section:nth-child(2) input{
   border-radius: .3rem;
   padding: .5em;
+  width: 100%;
+  text-align: center;
 }
-main section:nth-child(3){
+/*se agrupan las caracteristicas que comparten n3 y n4*/
+main section:nth-child(n+3){
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin: 1rem 0;
 }
-
+/* Buttons line container
+main section:nth-child(3){
+  /*display: flex;
+  justify-content: space-between;
+}*/
 main section:nth-child(3) button{
-  width: 25%;
+  width: 21%;
   height: 2rem;
   border-radius: .6rem;
   box-shadow: .1rem .5rem;
 }
-
+/* result box container*/
+main section:nth-child(4){
+  /*display: flex;*/
+  flex-direction: column;
+}
+main section:nth-child(4) span{
+  font-size: 3rem;
+  font-weight: 600;
+}
