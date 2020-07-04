@@ -1,4 +1,4 @@
-function s(a, b) {
+export function suma(a, b) {
   return a + b
 }
 
@@ -7,7 +7,7 @@ function diff(a, b) {
 }
 
 //module.exports = { sum, diff } 
-module.exports = {
-  suma: s
-}
+//module.exports = {
+//  suma: s
+//}
 
