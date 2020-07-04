@@ -8,6 +8,6 @@ function diff(a, b) {
 
 //module.exports = { sum, diff } 
 module.exports = {
-  suma: sum;
+  suma: sum
 }
 
