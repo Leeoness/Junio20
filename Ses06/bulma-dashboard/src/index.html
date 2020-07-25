@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bulma Dashboard</title>
+  <title>Bulma Login Dashboard</title>
 </head>
 <body>
   <section class="hero is-info is-fullheight">
@@ -11,21 +11,21 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-5-tablet is-4-desktop is-3-widescreen">
-            <form action="">
-              <figure class="field image is-128x128">
+            <form class="box" action="dashboard.html">
+              <figure class="field has-text-centered">
                 <img src="https://bulma.io/images/placeholders/128x128.png">
               </figure>
               <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="email" placeholder="e.g. leeeones@gmail.com">
+                  <input class="input" type="email" placeholder="e.g. leeeones@gmail.com" required>
                   <span class="icon is-left"><i class="fas fa-envelope"></i></span>
                 </div>
               </div>
               <div class="field">
                 <label class="label">Password</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="password" placeholder="***">
+                  <input class="input" type="password" placeholder="******" required>
                   <span class="icon is-left"><i class="fas fa-lock"></i></span>
                 </div>
               </div>
@@ -36,7 +36,7 @@
                 </label>
               </div>
               <div class="field">
-                <button class="button" type="submit">Login</button>
+                <button class="button is-success" type="submit">Login</button>
               </div>
             </form>
           </div>
