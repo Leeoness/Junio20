@@ -10,3 +10,7 @@ scripts: './src/scripts'
 div.card.mb-4>div.card-header-py-3+div.card-body
 > para tener hijos
 + para tener hermanos
+
+React
+npm i -D browser-sync
+agregaremos babel
