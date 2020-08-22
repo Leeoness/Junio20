@@ -10,19 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 
-  <title>Class component</title>
+  <title>Props</title>
   <style>
-    h3, small{
+    h3,
+    small {
       margin: 0;
       padding: 0;
     }
-    div > div {
+
+    div>div {
       margin: 1rem 0;
     }
-    small{
+
+    small {
       color: grey;
     }
-    a{
+
+    a {
       color: white;
       margin-left: 3rem;
     }
@@ -48,12 +52,12 @@
           <InnerComponent
             title="3. Confronting Bias: Thriving Across Our Differences"
             subtitle="By: Verna Myers and Arianna Huffington" />
-          <ShowMoreComponent label="Show more..."/>
+          <ShowMoreComponent label="Show more..." />
         </div>
       )
     }
     const InnerComponent = (props) => {
-      const {title, subtitle} = props
+      const { title, subtitle } = props
       return (
         <div>
           <h3>{title}</h3>
@@ -61,8 +65,8 @@
         </div>
       )
     }
-    class ShowMoreComponent extends React.Component{
-      render(){
+    class ShowMoreComponent extends React.Component {
+      render() {
         return <a href="#">{this.props.label}</a>
       }
     }

@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 
-  <title>Class component</title>
+  <title>Functional component</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 
   <script type="text/babel">
     const ReactFunctionalComponent = () => {
-      const msg = "React class component"
+      const msg = "React functional component"
       return (
         <div>
           <h3>{msg}</h3>
@@ -28,24 +28,18 @@
         </div>
       )
     }
-    class InnerClassComponent1 extends React.Component {
-      render() {
-        return (
-          <div>
-            <h3>Inner class component 1</h3>
-          </div>
-        )
-      }
+    const InnerClassComponent1 = () => {
+      return (
+        <h3>Inner functional component 1</h3>
+      )
     }
-    class InnerClassComponent2 extends React.Component {
-      render() {
-        return (
-          <div>
-            <h3>Inner class component 2</h3>
-            <p>composed by two tags</p>
-          </div>
-        )
-      }
+    const InnerClassComponent2 = () => {
+      return (
+        <div>
+          <h3>Inner functional component 2</h3>
+          <p>composed by two tags</p>
+        </div>
+      )
     }
 
 
