@@ -72,3 +72,10 @@ Ejemplo de reac con arrowfunctions
 ###################################################
 props es de react
 #####################################################
+version 4 con clases y version 5 con hooks / react routing
+https://reactrouter.com/
+
+//////////////////////////////////
+ejericio conditional rendering / Tarea
+mostrar componente signout (aun no creado)
+cuando authFunction.isAuthenticated = true
