@@ -15,6 +15,7 @@ el = element
 ** Directivas
 v-if
 
+** sincronos(mutations), son operaciones en linea, asincronos(actions) son base de datos http etc...
 
 ** instalar herramientas de navegador
 https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related
