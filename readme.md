@@ -79,3 +79,52 @@ https://reactrouter.com/
 ejericio conditional rendering / Tarea
 mostrar componente signout (aun no creado)
 cuando authFunction.isAuthenticated = true
+###############################################################
+mi scss
+*{
+  --primary: #07038C;
+  --background-color: #0439D9;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--primary);
+  color: whitesmoke;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+nav{
+  background-color: orange;
+}
+nav ul {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+nav ul li{
+  padding: .6rem .9rem;
+}
+nav ul li a{
+  display: inline-block;
+  min-width: 15rem;
+  background-color: azure;
+  color: grey;
+  border: .3rem solid rgb(9, 89, 164);
+  border-radius: .3rem;
+  padding: .3rem .6rem;
+  text-decoration: none;
+  margin-left: .6rem;
+}
+nav ul li a:hover{
+  background-color: rgb(9, 89, 164);
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem;
+}

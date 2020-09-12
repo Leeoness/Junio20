@@ -1,46 +1,32 @@
-*{
-  --primary: #07038C;
-  --background-color: #0439D9;
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
 }
 
-body{
-  background-color: var(--primary);
-  color: whitesmoke;
-  font-family: 'Baloo Tamma 2', cursive;
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-nav{
-  background-color: orange;
-}
+
 nav ul {
+  background-color: steelblue;
   height: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   list-style-type: none;
 }
-nav ul li{
-  padding: .6rem .9rem;
-}
-nav ul li a{
-  display: inline-block;
-  min-width: 15rem;
-  background-color: azure;
-  color: grey;
-  border: .3rem solid rgb(9, 89, 164);
-  border-radius: .3rem;
-  padding: .3rem .6rem;
-  text-decoration: none;
-  margin-left: .6rem;
-}
-nav ul li a:hover{
-  background-color: rgb(9, 89, 164);
+
+nav ul li a {
   color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: 3rem;
 }
