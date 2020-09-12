@@ -2,27 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <title>Vue If</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <title>Vue IF</title>
 </head>
 
 <body>
   <a onclick="window.history.back()">Go back</a>
 
   <section id="root">
-    <h3>Hello World {{ message }}</h3>
+    <h3>vue if</h3>
+    <p v-if='areYouNewInVue'>Learning Vue</p>
+    <p v-else='areYouNewInVue'>Mastering Vue</p>
+  </section>
+
+  <section id="loginSection">
+    <button v-if='isLogged'>logout</button>
+    <button v-else>login</button>
   </section>
 
   <script>
     const app = new Vue({
       el: '#root',
       data: {
-        message: 'Vue'
+        areYouNewInVue: false
+      }
+    })
+    const loginSection = new Vue({
+      el: '#loginSection',
+      data: {
+        isLogged: false
       }
     })
   </script>
 </body>
+
 </html>
