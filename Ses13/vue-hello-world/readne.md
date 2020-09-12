@@ -12,6 +12,9 @@ nav>ul>li>a
 
 el = element
 
+** Directivas
+v-if
+
 
 ** instalar herramientas de navegador
 https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related
