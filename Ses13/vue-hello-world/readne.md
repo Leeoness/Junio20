@@ -10,6 +10,8 @@ iniciamos proyecto npm init -y
 creamos nuestro index.html
 nav>ul>li>a
 
+el = element
+
 
 ** instalar herramientas de navegador
 https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related
